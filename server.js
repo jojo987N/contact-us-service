@@ -2,7 +2,7 @@ var express = require('express')
 
 var server = express()
 
-// console.log(123344)
+console.log(123344)
 
 // i = 0
 // setInterval(() => {
