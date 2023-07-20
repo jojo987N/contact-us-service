@@ -4,11 +4,11 @@ var server = express()
 
 // console.log(123344)
 
-i = 0
-setInterval(() => {
-    console.log(i)
-    i+=1
-}, 1000)
+// i = 0
+// setInterval(() => {
+//     console.log(i)
+//     i+=1
+// }, 1000)
 
 server.get("/", (req, res) => {
 
