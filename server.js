@@ -2,22 +2,18 @@ var express = require('express')
 
 var server = express()
 
-console.log(123344)
+// console.log(123344)
 
 i = 0
-// setInterval(() => {
-//     console.log(i)
-//     i+=1
-// }, 1000)
+setInterval(() => {
+    console.log(i)
+    i+=1
+}, 1000)
 
 server.get("/", (req, res) => {
 
-    // res.send('GII')
+    res.send('GII')
     // alert('Hi')
-    setInterval(() => {
-        res.send(i)
-        i+=1
-    }, 2000)
 
 })
 
