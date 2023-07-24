@@ -13,6 +13,11 @@ const { window } = new JSDOM( "" );
 
 // const xpath = require('xpath');
 
+
+const http = require('http');
+
+const server1 = http.createServer((req, res) => res.end("hello world"))
+
 const dotenv = require("dotenv")
 dotenv.config()
 
@@ -266,4 +271,5 @@ server.get("/fetch", async (req, res) => {
 
 })
 
-server.listen(3000)
+// server.listen(3000)
+server1.listen(3000, () => console.log("Server is running"))
