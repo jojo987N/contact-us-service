@@ -18,6 +18,8 @@ dotenv.config()
 
 var server = express()
 
+console.log('ttest');
+
 const f = async() => {
     try{
         const client = new Client({
