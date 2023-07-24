@@ -31,7 +31,7 @@ const dotenv = require("dotenv")
 dotenv.config()
 
 var server = express()
-server.listen(3000)
+// server.listen(3000)
 
 
 console.log('ttest');
@@ -282,5 +282,5 @@ server.get("/fetch", async (req, res) => {
 
 })
 
-// server.listen(3000)
+server.listen(3000)
 // server1.listen(3000, () => console.log("Server is running"))
