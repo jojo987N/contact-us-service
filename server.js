@@ -16,7 +16,16 @@ const { window } = new JSDOM( "" );
 
 const http = require('http');
 
-const server1 = http.createServer((req, res) => res.end("hello world"))
+const server1 = http.createServer((req, res) => {
+    // res.end("hello world")
+    switch(req.url){
+        case "/api":
+            res.end("hello api")
+
+    }
+})
+
+
 
 const dotenv = require("dotenv")
 dotenv.config()
