@@ -19,7 +19,7 @@ const http = require('http');
 const server1 = http.createServer((req, res) => {
     // res.end("hello world")
     switch(req.url){
-        case "/api":
+        case "/api1":
             res.end("hello api")
 
     }
