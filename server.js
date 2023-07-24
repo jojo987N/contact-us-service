@@ -191,6 +191,14 @@ server.get("/api", (req, res) => {
 
 })
 
+server.get("/test", (req, res) => {
+
+    res.send("test")
+    // res.send(new Date("Thu, 20 Jul 2023 22:15:05 +0000") > new Date("Wed, 19 Jul 2023 12:23:15 +0000"))
+    // alert('Hi')
+
+})
+
 
 server.get("/", (req, res) => {
 
