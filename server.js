@@ -22,8 +22,10 @@ const server1 = http.createServer((req, res) => {
     switch(req.url){
         case "/":
             res.write("Home")
+        break;
         case "/api2c":
             res.end("hello api2")
+        break;
 
     }
 })
