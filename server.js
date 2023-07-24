@@ -20,6 +20,8 @@ const server1 = http.createServer((req, res) => {
     // res.end("hello world")
     console.log(req.url)
     switch(req.url){
+        case "/":
+            res.end("Home")
         case "/api2c":
             res.end("hello api2")
 
@@ -283,5 +285,5 @@ server.get("/fetch", async (req, res) => {
 
 })
 
-server.listen(4000)
-//  server1.listen(3000, () => console.log("Server is running"))
+// server.listen(4000)
+ server1.listen(3000, () => console.log("Server is running"))
