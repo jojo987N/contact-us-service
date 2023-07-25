@@ -24,7 +24,7 @@ const server1 = http.createServer((req, res) => {
             res.end("Home")
         break;
         case "/api2c":
-            f();
+            console.log('f');
             res.end("hello api2")
         break;
 
