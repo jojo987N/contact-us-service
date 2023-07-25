@@ -16,20 +16,7 @@ const { window } = new JSDOM( "" );
 
 const http = require('http');
 
-const server1 = http.createServer((req, res) => {
-    // res.end("hello world")
-    console.log(req.url)
-    switch(req.url){
-        case "/":
-            res.end("Home")
-        break;
-        case "/api2c":
-            console.log('f');
-            res.end("hello api2")
-        break;
-
-    }
-})
+ 
 
 
 
@@ -206,6 +193,20 @@ const f = async() => {
 };
 
 
+const server1 = http.createServer((req, res) => {
+    // res.end("hello world")
+    console.log(req.url)
+    switch(req.url){
+        case "/":
+            res.end("Home")
+        break;
+        case "/api2c":
+            console.log('f1');
+            res.end("hello api2")
+        break;
+
+    }
+})
 
 server.get("/api", (req, res) => {
 
