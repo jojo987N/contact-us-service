@@ -689,7 +689,7 @@ server.get("/test", (req, res) => {
 
 })
 
-server.get("/contact", (req, res) => {
+server.get("/", (req, res) => {
     res.sendFile(__dirname + '/index.html');
      // res.send(new Date("Thu, 20 Jul 2023 22:15:05 +0000") > new Date("Wed, 19 Jul 2023 12:23:15 +0000"))
      // alert('Hi')
@@ -714,12 +714,12 @@ function generateUID() {
    
 
 
-server.get("/", (req, res) => {
-     console.log("bonjour");
-    // res.send(new Date("Thu, 20 Jul 2023 22:15:05 +0000") > new Date("Wed, 19 Jul 2023 12:23:15 +0000"))
-    // alert('Hi')
+// server.get("/", (req, res) => {
+//      console.log("bonjour");
+//     // res.send(new Date("Thu, 20 Jul 2023 22:15:05 +0000") > new Date("Wed, 19 Jul 2023 12:23:15 +0000"))
+//     // alert('Hi')
 
-})
+// })
 
 server.get("/fetch", async (req, res) => {
 
